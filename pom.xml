@@ -65,8 +65,8 @@
         <module>hbase11xsqlreader</module>
         <module>hbase20xsqlreader</module>
 
-        <module>ossreader</module>
-        <module>hdfsreader</module>
+        <!--<module>ossreader</module>-->
+        <!--<module>hdfsreader</module>-->
         <module>ftpreader</module>
         <module>txtfilereader</module>
         <module>streamreader</module>
@@ -98,7 +98,7 @@
 
 
         <module>odpswriter</module>
-        <module>osswriter</module>
+        <!--<module>osswriter</module>-->
         <module>otswriter</module>
         <module>hbase11xwriter</module>
         <module>hbase094xwriter</module>
@@ -106,7 +106,7 @@
         <module>hbase20xsqlwriter</module>
         <module>kuduwriter</module>
         <module>ftpwriter</module>
-        <module>hdfswriter</module>
+        <!--<module>hdfswriter</module>-->
         <module>txtfilewriter</module>
         <module>streamwriter</module>
 
@@ -126,11 +126,17 @@
         <module>adbmysqlwriter</module>
         <module>neo4jwriter</module>
 
+        <!---->
+        <module>tdengine20reader</module>
+        <module>tdengine20writer</module>
+        <module>tdengine30reader</module>
+        <module>tdengine30writer</module>
         <!-- common support module -->
         <module>plugin-rdbms-util</module>
         <module>plugin-unstructured-storage-util</module>
         <module>gaussdbreader</module>
         <module>gaussdbwriter</module>
+        <!---->
         <module>datax-example</module>
 
     </modules>
@@ -289,7 +295,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
-                <version>2.3.2</version>
+                <!--<version>2.3.2</version>-->
                 <configuration>
                     <source>${jdk-version}</source>
                     <target>${jdk-version}</target>
